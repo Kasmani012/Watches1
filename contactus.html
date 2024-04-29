@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <!-- <link rel="stylesheet" href="CSS/contactus.css"> -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+<link rel="stylesheet" href="css/contactus.css">
+
+  </head>
+<body>
+ 
+    <!-- navbar started -->
+
+  
+  <!-- navbar end -->
+
+  <div class="container">
+    <section class="box">
+        <h1>Contact Us</h1>
+        <input  type="text" id="ufname" placeholder="First Name" >
+        <span id="errorfirstname" ></span>
+        <input type="text" id="ulname" placeholder="Last Name" >
+        <span id="errorlastname" ></span>
+        <input id="uemail"  type="text" placeholder="Email" >
+        <span id="erroremail"></span>
+        <input type="text" id="uphonenumber" placeholder="Phone Number"  >
+        <span id="errorphonenumber"></span>
+        <input type="number" id="uage" min="0" placeholder="Age"  >
+        <span id="errrorage"></span>
+        <input type="text" id="usub" placeholder="Subject"  >
+        <span id="errorsubject"></span>
+        <h4>Type Your Message Here...</h4>
+        <textarea name="" id="umessage" cols="" rows="6" placeholder="" ></textarea>
+        <span id="errrormessage"></span>
+       
+        <button type="submit" id="button" onclick="formvalidate()">Submit</button>
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
+
+<script>
+
+
+    function formvalidate()
+{
+var firstname = document.getElementById("ufname").value
+var lastname = document.getElementById("ulname").value
+var email = document.getElementById("uemail").value
+var phonenumber = document.getElementById("uphonenumber").value
+var age = document.getElementById("uage").value
+var subject = document.getElementById("usub").value
+var message = document.getElementById("umessage").value
+
+
+if (firstname =="")
+{
+
+    swal({  
+        title: " Oops!",  
+        text: " First Name cannnot be empty",  
+        icon: "error",  
+        button: "oh no!",  
+      });  
+
+
+}
+else if( lastname =="")
+ {
+    swal({  
+        title: " Oops!",  
+        text: " Last Name cannnot be empty",  
+        icon: "error",  
+        button: "oh no!",  
+      });  
+
+}
+else if( email =="")
+ {
+    swal({  
+        title: " Oops!",  
+        text: " Email cannnot be empty",  
+        icon: "error",  
+        button: "oh no!",  
+      });  
+
+}
+else if( phonenumber =="")
+ {
+    swal({  
+        title: " Oops!",  
+        text: " Phone number cannnot be empty",  
+        icon: "error",  
+        button: "oh no!",  
+      });  
+
+}
+else if( age =="")
+ {
+    swal({  
+        title: " Oops!",  
+        text: " Age cannnot be empty",  
+        icon: "error",  
+        button: "oh no!",  
+      });  
+
+}
+else if( subject =="")
+ {
+    swal({  
+        title: " Oops!",  
+        text: " Subject cannnot be empty",  
+        icon: "error",  
+        button: "oh no!",  
+      });  
+
+}
+else if( message =="")
+ {
+    swal({  
+        title: " Oops!",  
+        text: " Message cannnot be empty",  
+        icon: "error",  
+        button: "oh no!",  
+      });  
+
+}
+
+
+
+
+
+
+}
+
+</script>
+
+
+   
+</body>
+</html>
